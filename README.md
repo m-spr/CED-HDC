@@ -40,7 +40,7 @@ To set up the framework, follow these steps:
 
 - Clone this repository  
 - Make a new project based on [RCEHDC](https://github.com/m-spr/RCEHDC) 
-- Modify the IP by replacing the modules in the hardware folder as required.
+- Modify the IP by instanstiating the VHDL code to the modules in the hardware folder as required.
 
 
 Citation
@@ -59,6 +59,7 @@ If you find this work useful, please cite the following paper:
 Task List
 ------------
 - [ ] add instructions to run the ECC python and memory generator codes
+- [ ] add the modifide top module to be replaced with RCEHDC
 - [ ] add ECC memory to main project tcl
 - [ ] add ECC module generator to the project
 
