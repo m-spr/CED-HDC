@@ -17,7 +17,7 @@ It introduces negligible hardware overhead ($<0.1\%$), no additional latency, an
 ## **System Overview**  
 
 The diagram below illustrates our proposed **CED-HDC mechanism** for HDC accelerators. This framework:  
-Detection mechanism flow: 1. Fault analysis, 2. Generate CED hardware based on configuration, 3. Employ CED hardware in HDC accelerator. $W$ denotes the monitoring window size for keeping track of the output scores, and $sel$ selects the optimal fault detection method. Model training is performed using [Torchhd](https://github.com/hyperdimensional-computing/torchhd), while the HDC-to-FPGA mapping is handled by [RCEHDC](git@github.com:m-spr/NUECC-HDC.git).  
+Detection mechanism flow: 1. Fault analysis, 2. Generate CED hardware based on configuration, 3. Employ CED hardware in HDC accelerator. $W$ denotes the monitoring window size for keeping track of the output scores, and $sel$ selects the optimal fault detection method. Model training is performed using [Torchhd](https://github.com/hyperdimensional-computing/torchhd), while the HDC-to-FPGA mapping is handled by [RCEHDC](https://github.com/m-spr/RCEHDC).  
 
 ![System Overview](images/system_overview.png)   
 
@@ -33,14 +33,13 @@ Fault detection module. PND*: Pointer to the Newest Data (writing address), POD*
 
 ![Hardware Overview](images/hardware_architecture.png)  
 
----
 
 ## **Getting Started**  
 
 To set up the framework, follow these steps:  
 
 - Clone this repository  
-- Make a new project based on [RCEHDC](git@github.com:m-spr/NUECC-HDC.git) 
+- Make a new project based on [RCEHDC](https://github.com/m-spr/RCEHDC) 
 - Modify the IP by replacing the modules in the hardware folder as required.
 
 
